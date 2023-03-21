@@ -15,7 +15,7 @@
     "FILMES",
     "PESQUISAR"
   ],
-  "author": "Gabriel Nicolas de Paula Dino",
+  "author": "Gabriel Nicolas de Paula Dino, Henrique Galvão da Silva",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
