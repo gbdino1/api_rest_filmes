@@ -1,0 +1,23 @@
+{
+  "name": "api_rest_filmes_gabriel_dino",
+  "version": "1.0.0",
+  "description": "API que permite o usuario pesquisar filmes por titulo, ator, diretor, genero, etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NODE",
+    "JS",
+    "FILME",
+    "GIT",
+    "PW2",
+    "FILMES",
+    "PESQUISAR"
+  ],
+  "author": "Gabriel Nicolas de Paula Dino",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
