@@ -4,7 +4,7 @@
   "description": "API que permite o usuario pesquisar filmes por titulo, ator, diretor, genero, etc",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon"
   },
   "keywords": [
     "NODE",
@@ -18,6 +18,11 @@
   "author": "Gabriel Nicolas de Paula Dino, Henrique Galvão da Silva",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mysql2": "^3.3.0",
+    "sequelize": "^6.31.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
