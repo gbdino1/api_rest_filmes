@@ -7,10 +7,10 @@ const router = express.Router();
 
 /* ROTA DE INSERÇÃO DE FILME(POST)*/
 router.post("/filme/inserir", (req, res) => {
-    let nome_filme = req.body.nome_filme;
+    let titulo_filme = req.body.titulo_filme;
 
     filmeModel.create(
-        {nome_filme}
+        {titulo_filme}
         ).then(() => {
             return res.status(201).json({
                 errorStatus: false,
@@ -43,15 +43,15 @@ router.get("/filme/selecionar", (req, res) => {
 /* ROTA DE ALTERAÇÃO DE filme(PUT)*/
 router.put("/filme/alterar", (req, res) => {
     let id = req.body.id;
-    let nome_filme = req.body.nome_filme;
+    let titulo_filme = req.body.titulo_filme;
 
     filmeModel.update(
-        { nome_filme}, 
+        { titulo_filme}, 
         { where: { id } }
         ).then(() => {
             return res.status(200).json({
                 errorStatus: false,
-                mensageStatus: "filme adicionado de fomra top",
+                mensageStatus: "filme alterado de forma top",
             });
         })
         .catch((error) => {
@@ -72,7 +72,7 @@ router.delete("/filme/excluir/:id", (req, res) => {
         ).then(() => {
             return res.status(200).json({
                 errorStatus: false,
-                mensageStatus: "FILME EXCLUIDA COM DESPRAZER, MAS SUCESSO",
+                mensageStatus: "FILME EXCLUIDO COM DESPRAZER, MAS SUCESSO",
             });
         })
         .catch((error) => {

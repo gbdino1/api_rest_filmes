@@ -3,7 +3,7 @@ const sequelize = require('sequelize');
 
 /*CRAÇÃO DA CONEXÃO COM O BANCO DE DADOS*/
 const connection = new sequelize(
-    'api_filminhos',
+    'api_filmes',
     'root',
     '',
     {

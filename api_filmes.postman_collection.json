@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "1ae921f0-4a52-4505-bdab-56924b245db6",
+		"name": "api_filmes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26212198"
+	},
+	"item": [
+		{
+			"name": "FIlme",
+			"item": [
+				{
+					"name": "Selecionar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_base}}/filme/selecionar",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"filme",
+								"selecionar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo_filme\":\"TESTE3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_base}}/filme/inserir",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"filme",
+								"inserir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ALterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"titulo_filme\":\"TESTE DE ALTEREÇÃO\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_base}}/filme/alterar",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"filme",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_base}}/filme/excluir/2",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"filme",
+								"excluir",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -10,6 +10,10 @@ app.use(express.json());
 /*HABILITA A APLICAÇÃO A MANIPULA DADOS DE UM CORPO DE DADOS*/
 app.use(express.urlencoded({extended:true}))
 
+/*CRIAÇÃO DAS ROTAS */
+const filme = require('./controller/filme');
+app.use('/', filme);
+
 /*CRIAÇÃO */
 app.listen(3000, ()=>{
     console.log('Servidor rodando em http://localhost:3000/');
